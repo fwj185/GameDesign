@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ffc1425305576a4fa3d3cc1d7350d69, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  EnemyWaveGroups:
+  - Name: "\u7B2C\u4E00\u6CE2\u5E7D\u7075"
+    Description: 
+    Waves:
+    - Name: "\u5E7D\u7075"
+      Active: 1
+      GenerateDuration: 0.3
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 15
+      HPScale: 1
+      SpeedScale: 1
+    - Name: "\u5E7D\u7075"
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Boss
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 5140031314672036857, guid: 73f068ef39867af4d9a2666217947e17, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
+  - Name: B
+    Description: 
+    Waves:
+    - Name: B
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+    - Name: B_2
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 30
+      HPScale: 2
+      SpeedScale: 1
+    - Name: BBoss
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1774609175340014669, guid: c7f5a3d72d9b24847b02f516b2868766, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
+  - Name: C
+    Description: 
+    Waves:
+    - Name: C
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 376678042692693194, guid: 20df8a55dd1ab7d4aa594db17d58988b, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+    - Name: C_2
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 376678042692693194, guid: 20df8a55dd1ab7d4aa594db17d58988b, type: 3}
+      Seconds: 30
+      HPScale: 2
+      SpeedScale: 1
+    - Name: CBoss
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 6171154868253266030, guid: 7f175cc15f88fc142a26e47538d0ddd1, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
+  - Name: D
+    Description: 
+    Waves:
+    - Name: D
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 8237733644936224992, guid: 9e4313b3526989340b1feeaaa376567d, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+    - Name: DBoss
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 6607690823285417831, guid: b73ede5bf5e7015469d683e8b43221f7, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
+  - Name: E
+    Description: 
+    Waves:
+    - Name: E
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 1264901683074964380, guid: 0ffe8cfaf45ac794d888ff5fb8e9c082, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+  - Name: Fly
+    Description: 
+    Waves:
+    - Name: Fly
+      Active: 1
+      GenerateDuration: 0.05
+      EnemPrefab: {fileID: 3756038477292849461, guid: 83814485e0fe1504f8b2ece5b08b1788, type: 3}
+      Seconds: 30
+      HPScale: 1
+      SpeedScale: 1
+    - Name: FlyBoss
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 3091693904929477493, guid: 716de04527a01f54b91439d2c77f867e, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1

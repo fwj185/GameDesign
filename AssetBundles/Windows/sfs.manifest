@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2505414397
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 28a56e5ac99e82ee5d5e2d3ab9d1c12d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 28a56e5ac99e82ee5d5e2d3ab9d1c12d
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Art/Sound/Sfs/treasuer_chest.wav
+- Assets/Art/Sound/Sfs/ButtonClick.wav
+- Assets/Art/Sound/Sfs/enemy_die.mp3
+- Assets/Art/Sound/Sfs/hp.wav
+- Assets/Art/Sound/Sfs/walk.wav
+- Assets/Art/Sound/Sfs/ball.wav
+- Assets/Art/Sound/Sfs/game_pass.wav
+- Assets/Art/Sound/Sfs/die.wav
+- Assets/Art/Sound/Sfs/Achievement.wav
+- Assets/Art/Sound/Sfs/bomb.wav
+- Assets/Art/Sound/Sfs/hit.wav
+- Assets/Art/Sound/Sfs/ability_level_up.wav
+- Assets/Art/Sound/Sfs/hurt.wav
+- Assets/Art/Sound/Sfs/get_all_exp.wav
+- Assets/Art/Sound/Sfs/exp.wav
+- Assets/Art/Sound/Sfs/knife.wav
+- Assets/Art/Sound/Sfs/level_up.ogg
+- Assets/Art/Sound/Sfs/coin.wav
+Dependencies: []

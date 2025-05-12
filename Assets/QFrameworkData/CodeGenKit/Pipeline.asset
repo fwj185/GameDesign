@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621f3f918dd5423d93a746ad8fc9082d, type: 3}
+  m_Name: Pipeline
+  m_EditorClassIdentifier: 
+  CurrentTask:
+    ShowLog: 0
+    Status: 1
+    GameObject: {fileID: 0}
+    From: 0
+    NameToFullName: []
+    BindInfos:
+    - TypeName: UnityEngine.UI.Image
+      PathToRoot: bg
+      MemberName: bg
+    - TypeName: UnityEngine.UI.Button
+      PathToRoot: BtnSure
+      MemberName: BtnSure
+    ScriptsFolder: Assets/Scripts/Game
+    ClassName: ExeChestPanel
+    Namespace: PrjectSurvivor
+    MainCode: "using UnityEngine;\r\nusing QFramework;\r\n\r\nnamespace PrjectSurvivor\r\n{\r\n\tpublic
+      partial class ExeChestPanel : ViewController\r\n\t{\r\n\t\tvoid Start()\r\n\t\t{\r\n\t\t\t//
+      Code Here\r\n\t\t}\r\n\t}\r\n}\r\n"
+    DesignerCode: "// Generate Id:f0380030-850a-42f4-86c9-4d505c5ef0d9\r\nusing UnityEngine;\r\n\r\nnamespace
+      PrjectSurvivor\r\n{\r\n\tpublic partial class ExeChestPanel\r\n\t{\r\n\r\n\t\tpublic
+      UnityEngine.UI.Image bg;\r\n\r\n\t\tpublic UnityEngine.UI.Button BtnSure;\r\n\r\n\t}\r\n}\r\n"

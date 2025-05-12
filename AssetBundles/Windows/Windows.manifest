@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2016083236
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: uigamestartpanel_prefab
+      Dependencies:
+        Dependency_0: fusion-pixel_ttf
+    Info_1:
+      Name: uigameoverpanel_prefab
+      Dependencies:
+        Dependency_0: fusion-pixel_ttf
+    Info_2:
+      Name: fusion-pixel_ttf
+      Dependencies: {}
+    Info_3:
+      Name: uigamepaspanel_prefab
+      Dependencies:
+        Dependency_0: fusion-pixel_ttf
+    Info_4:
+      Name: sfs
+      Dependencies: {}
+    Info_5:
+      Name: uigameesc_prefab
+      Dependencies:
+        Dependency_0: fusion-pixel_ttf
+    Info_6:
+      Name: icon_spriteatlasv2
+      Dependencies: {}
+    Info_7:
+      Name: uigamepanel_prefab
+      Dependencies:
+        Dependency_0: fusion-pixel_ttf
