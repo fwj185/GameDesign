@@ -36,7 +36,7 @@ namespace QAssetBundle
         public const string KNIFE = "knife";
         public const string LEVEL_UP = "level_up";
         public const string TREASUER_CHEST = "treasuer_chest";
-        public const string WALK = "walk";
+        public const string PADDLE = "paddle";
     }
     public class Testuigamepanel_unity
     {

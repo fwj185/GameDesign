@@ -95,7 +95,7 @@ namespace PrjectSurvivor
             {
                 if (mAudioKit == null)
                 {
-                    mAudioKit = AudioKit.PlaySound(Sfs.WALK, true);
+                    mAudioKit = AudioKit.PlaySound(Sfs.PADDLE, true);
                 }
                 if (horizontal > 0)
                 {
