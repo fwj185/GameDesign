@@ -54,11 +54,13 @@ namespace QFramework
         void Deinit();
     }
 
-
+// 核心接口定义
     public interface IAction : IAction<ActionStatus>
     {
     }
-
+// - 对象池模式：通过 SimpleObjectPool 重用对象
+// - 模板方法模式：定义 OnReset/OnDeinit 等可重写方法
+// - 自动回收机制：ActionQueue 自动回收已完成的动作
     public abstract class AbstractAction<T> : IAction where T : AbstractAction<T>, new()
     {
         protected AbstractAction()
@@ -121,7 +123,9 @@ namespace QFramework
 
         public bool Deinited { get; set; }
     }
-
+// // - 暂停/恢复控制
+// - 更新模式选择（Scaled/Unscaled 时间）
+// - 生命周期管理（Allocate/Recycle）
     public class ActionController : IActionController
     {
         private static SimpleObjectPool<IActionController> mPool = new SimpleObjectPool<IActionController>(
