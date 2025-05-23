@@ -442,7 +442,7 @@ namespace QFramework
         public static TResult SendQuery<TResult>(this ICanSendQuery self, IQuery<TResult> query) =>
             self.GetArchitecture().SendQuery(query);
     }
-//生命周期管理
+
     public interface ICanInit
     {
         bool Initialized { get; set; }
@@ -609,7 +609,7 @@ namespace QFramework
 		}
 #endif
     }
-//事件系统
+
     public class TypeEventSystem
     {
         private readonly EasyEvents mEvents = new EasyEvents();
@@ -632,7 +632,7 @@ namespace QFramework
     #endregion
 
     #region IOC
-//IoC 容器  自动生命周期管理
+
     public class IOCContainer
     {
         private Dictionary<Type, object> mInstances = new Dictionary<Type, object>();
@@ -675,7 +675,7 @@ namespace QFramework
     #endregion
 
     #region BindableProperty
-//数据绑定
+
     public interface IBindableProperty<T> : IReadonlyBindableProperty<T>
     {
         new T Value { get; set; }

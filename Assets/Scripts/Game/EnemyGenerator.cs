@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace PrjectSurvivor
 {
+
     /// <summary>
     /// 敌人的波次
     /// </summary>
@@ -31,10 +32,6 @@ namespace PrjectSurvivor
 
         public static BindableProperty<int> EnemyNum = new BindableProperty<int>(0);
 
-        // 添加三种海怪的预制体引用
-        public GameObject LanternFishPrefab;
-        public GameObject OctopusPrefab;
-        public GameObject SharkPrefab;
 
         private EnemyWave currenwave = null;
         void Start()
@@ -45,11 +42,12 @@ namespace PrjectSurvivor
                 {
                     enemiesQueue.Enqueue(wave);
                 });
+
             }
         }
-        
         private void Update()
         {
+
             if (currenwave == null && enemiesQueue.Count > 0)
             {
                 currenwave = enemiesQueue.Dequeue();
@@ -77,67 +75,23 @@ namespace PrjectSurvivor
                         pos.y = RandomUtility.Choose(CameraController.mLB.position.y, CameraController.mRT.position.y);
                         pos.x = Random.Range(CameraController.mLB.position.x, CameraController.mRT.position.x);
                     }
-                    
-                    // 随机选择一种海怪生成
-                    GameObject enemyPrefab = GetRandomEnemyPrefab();
-                    Vector3 enemyScale = Vector3.one; // 默认缩放值，以防万一
-
-                    // 根据选择的预制体设置对应的缩放值
-                    if (enemyPrefab == LanternFishPrefab)
-                    {
-                        enemyScale = new Vector3(0.1f, 0.1f, 0.1f);
-                    }
-                    else if (enemyPrefab == OctopusPrefab)
-                    {
-                        enemyScale = new Vector3(0.12f, 0.12f, 0.12f);
-                    }
-                    else if (enemyPrefab == SharkPrefab) // 假设 SharkPrefab 是第三种敌人
-                    {
-                        enemyScale = new Vector3(0.16f, 0.16f, 0.16f);
-                    }
-                    
-                    enemyPrefab.Instantiate().Position(pos)
+                    currenwave.EnemPrefab.Instantiate().Position(pos)
                         .Self((self) =>
                         {
-                            self.transform.localScale = enemyScale; // 在这里设置缩放
                             var enemy = self.GetComponent<IEnemy>();
                             enemy.SetSpeedScale(currenwave.SpeedScale);
                             enemy.SetHPScale(currenwave.HPScale);
                         })
                         .Show();
                 }
-                
                 if (mCurrentWaveSeconds > currenwave.Seconds)
                 {
                     currenwave = null;
                 }
+
             }
-        }
-        
-        // 根据不同的难度和波次，随机选择一种海怪
-        private GameObject GetRandomEnemyPrefab()
-        {
-            // 根据游戏进度或难度调整各种敌人的出现概率
-            float gameProgress = Mathf.Clamp01(Time.timeSinceLevelLoad / 300f); // 假设游戏最长5分钟
-            
-            float lanternFishChance = 0.7f - gameProgress * 0.4f; // 随着游戏进行，灯笼鱼出现概率降低
-            float octopusChance = 0.2f + gameProgress * 0.1f;    // 章鱼怪概率略微增加
-            float sharkChance = 0.1f + gameProgress * 0.3f;      // 鲨鱼怪概率大幅增加
-            
-            float randomValue = Random.value;
-            
-            if (randomValue < lanternFishChance)
-            {
-                return LanternFishPrefab;
-            }
-            else if (randomValue < lanternFishChance + octopusChance)
-            {
-                return OctopusPrefab;
-            }
-            else
-            {
-                return SharkPrefab;
-            }
+
+
         }
     }
 }
