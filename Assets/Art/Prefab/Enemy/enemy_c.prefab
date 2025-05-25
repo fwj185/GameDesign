@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7258731351255268883
 Transform:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ MonoBehaviour:
   PrefabFolder: Assets/Art/Prefab
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
+  inScreen: 0
   Owner: {fileID: 376678042692693194}
   SelfCollider2D: {fileID: 0}
 --- !u!1 &5342506024070027205
@@ -267,7 +268,7 @@ SpriteRenderer:
   m_SortingLayerID: -929141789
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 88a7e07d9a7a63943938dac44db64261, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c30050213423bdc41aa087a4a97e8575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

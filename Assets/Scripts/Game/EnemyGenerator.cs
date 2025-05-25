@@ -32,10 +32,6 @@ namespace PrjectSurvivor
 
         public static BindableProperty<int> EnemyNum = new BindableProperty<int>(0);
 
-        // 添加三种不同敌人的预制体
-        public GameObject EnemyPrefab1;
-        public GameObject EnemyPrefab2;
-        public GameObject EnemyPrefab3;
 
         private EnemyWave currenwave = null;
         void Start()
@@ -67,52 +63,35 @@ namespace PrjectSurvivor
                 if (mCurrentSeconds > currenwave.GenerateDuration && Player.Default != null)
                 {
                     mCurrentSeconds = 0f;
-                    
-                    // 生成三个不同的敌人
-                    SpawnEnemy(currenwave.EnemPrefab, 0);
-                    SpawnEnemy(EnemyPrefab1 != null ? EnemyPrefab1 : currenwave.EnemPrefab, 1);
-                    SpawnEnemy(EnemyPrefab2 != null ? EnemyPrefab2 : currenwave.EnemPrefab, 2);
+                    var xOry = RandomUtility.Choose(-1, 1);
+                    var pos = Vector2.zero;
+                    if (xOry == -1)
+                    {
+                        pos.x = RandomUtility.Choose(CameraController.mLB.position.x, CameraController.mRT.position.x);
+                        pos.y = Random.Range(CameraController.mLB.position.y, CameraController.mRT.position.y);
+                    }
+                    else
+                    {
+                        pos.y = RandomUtility.Choose(CameraController.mLB.position.y, CameraController.mRT.position.y);
+                        pos.x = Random.Range(CameraController.mLB.position.x, CameraController.mRT.position.x);
+                    }
+                    currenwave.EnemPrefab.Instantiate().Position(pos)
+                        .Self((self) =>
+                        {
+                            var enemy = self.GetComponent<IEnemy>();
+                            enemy.SetSpeedScale(currenwave.SpeedScale);
+                            enemy.SetHPScale(currenwave.HPScale);
+                        })
+                        .Show();
                 }
                 if (mCurrentWaveSeconds > currenwave.Seconds)
                 {
                     currenwave = null;
                 }
-            }
-        }
 
-        // 新增生成敌人的方法
-        private void SpawnEnemy(GameObject enemyPrefab, int index)
-        {
-            if (enemyPrefab == null) return;
-
-            var xOry = RandomUtility.Choose(-1, 1);
-            var pos = Vector2.zero;
-            if (xOry == -1)
-            {
-                pos.x = RandomUtility.Choose(CameraController.mLB.position.x, CameraController.mRT.position.x);
-                pos.y = Random.Range(CameraController.mLB.position.y, CameraController.mRT.position.y);
-            }
-            else
-            {
-                pos.y = RandomUtility.Choose(CameraController.mLB.position.y, CameraController.mRT.position.y);
-                pos.x = Random.Range(CameraController.mLB.position.x, CameraController.mRT.position.x);
             }
 
-            // 添加一些偏移，避免敌人重叠
-            Vector2 offset = new Vector2(index * 0.5f, index * 0.5f);
-            pos += offset;
 
-            enemyPrefab.Instantiate().Position(pos)
-                .Self((self) =>
-                {
-                    var enemy = self.GetComponent<IEnemy>();
-                    if (enemy != null)
-                    {
-                        enemy.SetSpeedScale(currenwave.SpeedScale);
-                        enemy.SetHPScale(currenwave.HPScale);
-                    }
-                })
-                .Show();
         }
     }
 }

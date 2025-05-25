@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2851497574288530841}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -929141789
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5012424b0768a5b4e8c44d8eaac95799, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6ace16e4b8ce6a4d937676c767d027d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -188,6 +188,7 @@ MonoBehaviour:
   PrefabFolder: Assets/Art/Prefab
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
+  inScreen: 0
   Owner: {fileID: 6171154868253266030}
   SelfCollider2D: {fileID: 0}
 --- !u!1 &6171154868253266030
@@ -208,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2851497574288530841
 Transform:
   m_ObjectHideFlags: 0
