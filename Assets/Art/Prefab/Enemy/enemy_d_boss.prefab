@@ -220,7 +220,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.941, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4020947437154343815}
@@ -247,8 +247,8 @@ MonoBehaviour:
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
   StopTime: 0
-  HP: 100
-  MoveSpeed: 3
+  HP: 10
+  MoveSpeed: 1
   diosColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   TreasureChestEnemy: 1
   Triangle: {fileID: 181274359657093089}

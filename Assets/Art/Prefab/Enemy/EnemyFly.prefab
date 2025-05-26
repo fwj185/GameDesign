@@ -56,8 +56,8 @@ MonoBehaviour:
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
   StopTime: 0
-  HP: 4
-  MoveSpeed: 2.5
+  HP: 20
+  MoveSpeed: 2
   diosColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   TreasureChestEnemy: 0
   Triangle: {fileID: 7904354856981861116}

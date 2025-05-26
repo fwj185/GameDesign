@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -929141789
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e6ace16e4b8ce6a4d937676c767d027d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fcb21d24624ebb142ba5ae85bcf8ae2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -247,8 +247,8 @@ MonoBehaviour:
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
   StopTime: 0
-  HP: 100
-  MoveSpeed: 1.5
+  HP: 50
+  MoveSpeed: 1
   diosColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   TreasureChestEnemy: 1
   Triangle: {fileID: 6091636549983488489}
