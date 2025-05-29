@@ -15,7 +15,7 @@ public class DissoLve : MonoBehaviour
         ActionKit.Lerp(1, 0, 0.5f, (fade) =>
         {
             material.SetFloat(Fade, fade);
-            this.LocalScale(1 + (1 - fade) * 0.5f);
+            // this.LocalScale(1 + (1 - fade) * 0.5f);
         }).Start(this, () =>
         {
             Destroy(material);

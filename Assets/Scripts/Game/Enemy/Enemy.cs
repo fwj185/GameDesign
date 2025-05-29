@@ -32,7 +32,7 @@ namespace PrjectSurvivor
             if (HP <= 0f)
             {
                 Global.GeneratPowerUp(gameObject, TreasureChestEnemy);
-                FxController.Play(Triangle, diosColor);
+                // FxController.Play(Triangle, diosColor); // 移除或注释掉这行
                 this.DestroyGameObjGracefully();
                 AudioKit.PlaySound(Sfs.ENEMY_DIE);
             }
