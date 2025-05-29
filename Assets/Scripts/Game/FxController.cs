@@ -18,7 +18,7 @@ namespace PrjectSurvivor
         {
             _instance.EnemyDieFx.Instantiate()
                 .Position(sprite.Position())
-                // .LocalScale(sprite.LocalScale())
+                .LocalScale(sprite.LocalScale())
                 .Self(s =>
                 {
                     s.GetComponent<DissoLve>().DissolveColor = dissolveColoer;

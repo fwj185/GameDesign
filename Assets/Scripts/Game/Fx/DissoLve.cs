@@ -12,10 +12,10 @@ public class DissoLve : MonoBehaviour
         var material = Instantiate(Material);
         GetComponent<SpriteRenderer>().material = material;
         material.SetColor(Color, DissolveColor);
-        ActionKit.Lerp(1, 0, 0.5f, (fade) =>
+        ActionKit.Lerp(1f, 0f, 0.5f, (fade) =>
         {
             material.SetFloat(Fade, fade);
-            // this.LocalScale(1 + (1 - fade) * 0.5f);
+            this.LocalScale(0.1f + (1f - fade) * 0.1f);
         }).Start(this, () =>
         {
             Destroy(material);
