@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace PrjectSurvivor
 {
-    [CreateAssetMenu(fileName = "关卡配置")]
+    [CreateAssetMenu(fileName = "newLevelConfig", menuName = "LevelConfig", order = 1)]
     public class LevelConfig : ScriptableObject
     {
         [SerializeField]
