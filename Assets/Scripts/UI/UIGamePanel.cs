@@ -12,6 +12,7 @@ namespace PrjectSurvivor
     {
         public static EasyEvent FlashScreen = new EasyEvent();
         public static EasyEvent OpenTreasurePanel = new EasyEvent();
+
         protected override void OnInit(IUIData uiData = null)
         {
             mData = uiData as UIGamePanelData ?? new UIGamePanelData();
@@ -78,26 +79,16 @@ namespace PrjectSurvivor
                 EnemNum.text = "剩余敌人数量:" + sec;
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
-            //EnemyGenerator.EnemyNum.Register((sec) =>
-            //{
-            //    EnemyGenerator EnemGame = FindAnyObjectByType<EnemyGenerator>();
-            //    if (EnemGame && EnemGame.isLast && EnemyGenerator.EnemyNum.Value == 0)
-            //    {
-            //        //Debug.Log(!FindObjectOfType<Enemy>());
-            //        UIKit.OpenPanel<UIGamePasPanel>();
-            //    }
-            //}).UnRegisterWhenGameObjectDestroyed(gameObject);
-
             ActionKit.OnUpdate.Register(() =>
             {
                 EnemyGenerator EnemGame = FindAnyObjectByType<EnemyGenerator>();
                 if (EnemGame &&
-                EnemGame.Currentwave == null &&
-                EnemGame.isLast &&
-                EnemyGenerator.EnemyNum.Value == 0)
+                    EnemGame.Currentwave == null &&
+                    EnemGame.isLast &&
+                    EnemyGenerator.EnemyNum.Value == 0)
                 {
-                    //Debug.Log(!FindObjectOfType<Enemy>());
-                    this.CloseSelf();
+                    // 修改为隐藏面板
+                    this.HideSelf();
                     UIKit.OpenPanel<UIGamePasPanel>();
                 }
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -116,9 +107,9 @@ namespace PrjectSurvivor
             FlashScreen.Register(() =>
             {
                 ActionKit.Sequence()
-                .Lerp(0, 0.5f, 0.1f, alpha => ScreenColor.ColorAlpha(alpha))
-                .Lerp(0.5f, 0.2f, 0.2f, alpha => ScreenColor.ColorAlpha(alpha), () => ScreenColor.ColorAlpha(0))
-                .Start(this);
+                   .Lerp(0, 0.5f, 0.1f, alpha => ScreenColor.ColorAlpha(alpha))
+                   .Lerp(0.5f, 0.2f, 0.2f, alpha => ScreenColor.ColorAlpha(alpha), () => ScreenColor.ColorAlpha(0))
+                   .Start(this);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
             //UpGradeRoot.Hide();
             OpenTreasurePanel.Register(() =>
@@ -142,6 +133,33 @@ namespace PrjectSurvivor
 
         protected override void OnClose()
         {
+        }
+
+        public void ClosePanelIndirectly()
+        {
+            CloseSelf();
+        }
+        // 公共方法，用于重新显示面板
+        public void ShowSelfAgain()
+        {
+            this.ShowSelf();
+        }
+        public void HideSelf()
+        {
+            gameObject.SetActive(false);
+        }
+        public void ShowSelf()
+        {
+            gameObject.SetActive(true);
+        }
+        private void CloseSelf()
+        {
+            Destroy(gameObject);
+        }
+        // 新增一个公共方法来间接调用 CloseSelf
+        public void PublicClose()
+        {
+            CloseSelf();
         }
     }
 }
