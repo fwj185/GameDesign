@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ffc1425305576a4fa3d3cc1d7350d69, type: 3}
+  m_Name: Level3
+  m_EditorClassIdentifier: 
+  EnemyWaveGroups:
+  - Name: 
+    Description: 
+    Waves:
+    - Name: third
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: third
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: third
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: third
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: third
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+  - Name: 
+    Description: 
+    Waves:
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+  - Name: 
+    Description: 
+    Waves:
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+  - Name: 
+    Description: 
+    Waves:
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 376678042692693194, guid: 20df8a55dd1ab7d4aa594db17d58988b, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 376678042692693194, guid: 20df8a55dd1ab7d4aa594db17d58988b, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+  - Name: 
+    Description: 
+    Waves:
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 1
+      EnemPrefab: {fileID: 6171154868253266030, guid: 7f175cc15f88fc142a26e47538d0ddd1, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
