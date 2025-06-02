@@ -14,7 +14,7 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: 8cda2f85c71536e45822a5378e59eee1, type: 3}
     - {fileID: 2800000, guid: 5440184a3f10fec4197227ce23d8887d, type: 3}
     - {fileID: 2800000, guid: bad4d9628646f9048b469189c3cde133, type: 3}
-    - {fileID: 2800000, guid: 26f172adcf3756844bb355ed614ab768, type: 3}
+    - {fileID: 2800000, guid: 159858e423d2a7341aa432a0ecab99a2, type: 3}
     - {fileID: 2800000, guid: 45c843c35fc97b943a2844a716e12aab, type: 3}
     - {fileID: 2800000, guid: cc2bbb2a3eaf10f429e9296287945fdc, type: 3}
     - {fileID: 2800000, guid: c971ae65e888aed4a9c28993a8a15395, type: 3}
@@ -22,12 +22,12 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: 989e8162767cc5e47b4f8c2a2a1d4d0a, type: 3}
     - {fileID: 2800000, guid: dc9a7e1990b6064448c265f6197bb3fe, type: 3}
     - {fileID: 2800000, guid: 145d204cea2817f498bbe07ec932b2be, type: 3}
-    - {fileID: 2800000, guid: 480e8d7f1497b154ea2ce37482ecdd03, type: 3}
+    - {fileID: 2800000, guid: 159858e423d2a7341aa432a0ecab99a2, type: 3}
     - {fileID: 2800000, guid: 4bc434dfb9887f34ba40b0abf529340c, type: 3}
     - {fileID: 2800000, guid: 2fd514f03997dc24790337ba312e1533, type: 3}
     - {fileID: 2800000, guid: 582ef72694a4a944b9201a0fb9765203, type: 3}
     - {fileID: 2800000, guid: 3c1c48ebef165e24fa3cf7dbdc2626fc, type: 3}
-    - {fileID: 2800000, guid: a9e1f49966cda294e8a7ce16e0b1224f, type: 3}
-    - {fileID: 2800000, guid: 914e8e105a3563949a9b43a300ef3409, type: 3}
-    - {fileID: 2800000, guid: df62b7fc1bf7a2343a904500d224e4fc, type: 3}
+    - {fileID: 2800000, guid: 3be7ec45dce55ad439e6aada2e410eb2, type: 3}
+    - {fileID: 2800000, guid: 253bcb42247d6de4d801c0cc87e8ba0b, type: 3}
+    - {fileID: 2800000, guid: 1d4e0c33c66dce24f92acd4afeaf8fd3, type: 3}
   m_IsVariant: 0
