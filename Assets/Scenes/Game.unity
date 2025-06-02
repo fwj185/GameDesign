@@ -10332,10 +10332,9 @@ MonoBehaviour:
   PrefabFolder: Assets/Art/Prefab
   ArchitectureFullTypeName: 
   ViewControllerFullTypeName: 
-  Config: {fileID: 11400000, guid: 68b72a7ba9a8ee44e88dd0e284cd5e13, type: 2}
-  EnemyPrefab1: {fileID: 4626267698388474983, guid: 79b7a02a0ce02f24e801e5e0301aa203, type: 3}
-  EnemyPrefab2: {fileID: 3309526515243761962, guid: dd44972a2ace63f41922e63e1d2a06fd, type: 3}
-  EnemyPrefab3: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+  defaultConfig: {fileID: 11400000, guid: 92ab73dafdf7a2342af7ae0df598bea0, type: 2}
+  secondConfig: {fileID: 11400000, guid: 29121ff9f3724ba42b4656ea87756e3a, type: 2}
+  thirdConfig: {fileID: 11400000, guid: 64cec64e6b4541541805e9655c879b12, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

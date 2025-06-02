@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BtnBackToStart: {fileID: 6429872338738956756}
+  BtnStartNextLvel: {fileID: 9129921135498871316}
   BtnRestartLevel: {fileID: 1955368859796727675}
-  BtnStartNextLevel: {fileID: 9129921135498871316}
 --- !u!222 &35379968425126185
 CanvasRenderer:
   m_ObjectHideFlags: 0
