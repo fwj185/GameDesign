@@ -24,6 +24,37 @@ MonoBehaviour:
       HPScale: 1
       SpeedScale: 1
     - Name: Wave1
+      Active: 0
+      GenerateDuration: 0
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Wave1
+      Active: 0
+      GenerateDuration: 0.1
+      EnemPrefab: {fileID: 5140031314672036857, guid: 73f068ef39867af4d9a2666217947e17, type: 3}
+      Seconds: 1
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Wave1
+      Active: 1
+      GenerateDuration: 0.1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Wave1
+      Active: 1
+      GenerateDuration: 0.1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+  - Name: Level1
+    Description: 
+    Waves:
+    - Name: Wave1
       Active: 1
       GenerateDuration: 1
       EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
@@ -31,15 +62,29 @@ MonoBehaviour:
       HPScale: 1
       SpeedScale: 1
     - Name: Wave1
+      Active: 0
+      GenerateDuration: 0
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Wave1
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.1
       EnemPrefab: {fileID: 5140031314672036857, guid: 73f068ef39867af4d9a2666217947e17, type: 3}
       Seconds: 1
       HPScale: 1
       SpeedScale: 1
     - Name: Wave1
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.1
+      EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: Wave1
+      Active: 1
+      GenerateDuration: 0.1
       EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
       Seconds: 10
       HPScale: 1

@@ -18,14 +18,14 @@ MonoBehaviour:
     Waves:
     - Name: shark
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.1
       EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
       Seconds: 10
       HPScale: 1
       SpeedScale: 1
     - Name: shark
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.1
       EnemPrefab: {fileID: 1281147619350582181, guid: fc22d3273d6a64843844ebac5fd75324, type: 3}
       Seconds: 10
       HPScale: 1
@@ -35,22 +35,53 @@ MonoBehaviour:
     Waves:
     - Name: zhangyu
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.1
       EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
       Seconds: 10
       HPScale: 1
       SpeedScale: 1
     - Name: zhangyu
       Active: 1
-      GenerateDuration: 1
+      GenerateDuration: 0.2
       EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
       Seconds: 10
       HPScale: 1
       SpeedScale: 1
     - Name: zhangyu
       Active: 1
-      GenerateDuration: 2
+      GenerateDuration: 0.3
       EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
       Seconds: 20
+      HPScale: 1
+      SpeedScale: 1
+  - Name: 
+    Description: 
+    Waves:
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 0.1
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 0.2
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 10
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 0.3
+      EnemPrefab: {fileID: 8519379035890449217, guid: 021c655f1fd7b3f48aa8b5be6be34171, type: 3}
+      Seconds: 20
+      HPScale: 1
+      SpeedScale: 1
+    - Name: zhangyu
+      Active: 1
+      GenerateDuration: 0.3
+      EnemPrefab: {fileID: 1774609175340014669, guid: c7f5a3d72d9b24847b02f516b2868766, type: 3}
+      Seconds: 1
       HPScale: 1
       SpeedScale: 1
