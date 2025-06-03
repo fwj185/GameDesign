@@ -1,4 +1,4 @@
-﻿using QFramework;
+using QFramework;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -85,8 +85,8 @@ namespace PrjectSurvivor.Achievement
             
             Add(new AchievementItem()
                     .WithKey("first_time_paired_ball")
-                    .WithName("合成后的篮球")
-                    .WithDescription("第一次解锁合成后的篮球\n奖励 1000 金币")
+                    .WithName("合成后的球")
+                    .WithDescription("第一次解锁合成后的球\n奖励 1000 金币")
                     .WithIconName("paired_ball_icon")
                     .Condition((_) => Global.SuperBasketBall.Value)
                     .OnUnlocked(_ => { Global.Coin.Value += 1000; }))
@@ -103,8 +103,8 @@ namespace PrjectSurvivor.Achievement
             
             Add(new AchievementItem()
                     .WithKey("first_time_paired_sword")
-                    .WithName("合成后的剑")
-                    .WithDescription("第一次解锁合成后的剑\n奖励 1000 金币")
+                    .WithName("合成后的船锚")
+                    .WithDescription("第一次解锁合成后的船锚\n奖励 1000 金币")
                     .WithIconName("paired_simple_sword_icon")
                     .Condition((_) => Global.SuperSword.Value)
                     .OnUnlocked(_ => { Global.Coin.Value += 1000; }))
@@ -121,8 +121,8 @@ namespace PrjectSurvivor.Achievement
             
             Add(new AchievementItem()
                     .WithKey("first_time_paired_circle")
-                    .WithName("合成后的守卫剑")
-                    .WithDescription("第一次解锁合成后的守卫剑\n奖励 1000 金币")
+                    .WithName("合成后的三叉戟")
+                    .WithDescription("第一次解锁合成后的三叉戟\n奖励 1000 金币")
                     .WithIconName("paired_rotate_sword_icon")
                     .Condition((_) => Global.SuperRotateSword.Value)
                     .OnUnlocked(_ => { Global.Coin.Value += 1000; }))
