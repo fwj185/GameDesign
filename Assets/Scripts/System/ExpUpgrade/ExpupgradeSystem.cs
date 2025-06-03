@@ -83,26 +83,26 @@ namespace PrjectSurvivor
             items.Clear();
             Add(new ExpUpgradeitem(true)
                 .Withkey("simple_sword")
-                .WithName("剑")
+                .WithName("锚")
                 .WithIconName("simple_sword_icon")
-                .WithPairedName("合成后的剑")
+                .WithPairedName("合成后的锚")
                 .WithPairedIconName("paired_simple_sword_icon")
                 .WithPairedDescription("攻击力翻倍攻击范围翻倍")
                 .Withdescription(lv =>
                 {
                     return lv switch
                     {
-                        1 => $"剑LV{lv}:攻击身边的敌人",
-                        2 => $"剑LV{lv}:\n攻击力+3，数量+2",
-                        3 => $"剑LV{lv}:\n攻击力+2 间隔+0.25s",
-                        4 => $"剑LV{lv}:\n攻击力+2 间隔+0.25s",
-                        5 => $"剑LV{lv}:\n攻击力+3 数量+2",
-                        6 => $"剑LV{lv}:\n范围+1 间隔+0.25s",
-                        7 => $"剑LV{lv}:\n攻击力+3 数量+2",
-                        8 => $"剑LV{lv}:\n攻击力+2 范围+1",
-                        9 => $"剑LV{lv}:\n攻击力+3 间隔+0.25s",
-                        10 => $"剑LV{lv}:\n攻击力3 数量+2",
-                        11 => $"剑LV{lv}:\n攻击力3 数量+2",
+                        1 => $"锚LV{lv}:攻击身边的敌人",
+                        2 => $"锚LV{lv}:\n攻击力+3，数量+2",
+                        3 => $"锚LV{lv}:\n攻击力+2 间隔+0.25s",
+                        4 => $"锚LV{lv}:\n攻击力+2 间隔+0.25s",
+                        5 => $"锚LV{lv}:\n攻击力+3 数量+2",
+                        6 => $"锚LV{lv}:\n范围+1 间隔+0.25s",
+                        7 => $"锚LV{lv}:\n攻击力+3 数量+2",
+                        8 => $"锚LV{lv}:\n攻击力+2 范围+1",
+                        9 => $"锚LV{lv}:\n攻击力+3 间隔+0.25s",
+                        10 => $"锚LV{lv}:\n攻击力3 数量+2",
+                        11 => $"锚LV{lv}:\n攻击力3 数量+2",
                         _ => null,
                     };
                 })
@@ -158,23 +158,23 @@ namespace PrjectSurvivor
                 }));
             Add(new ExpUpgradeitem(true)
                 .Withkey("rotate_sword")
-                .WithName("守卫剑")
+                .WithName("三叉戟")
                 .WithIconName("rotate_sword_icon")
-                .WithPairedName("合成后的守卫剑")
+                .WithPairedName("合成后的三叉戟")
                 .WithPairedIconName("paired_rotate_sword_icon")
                 .WithPairedDescription("攻击力翻倍 旋转速度翻倍")
                 .Withdescription(lv =>
                 {
                     return lv switch
                     {
-                        1 => $"守卫剑LV{lv}:环绕主角身边的剑",
-                        2 => $"守卫剑LV{lv}:\n数量+2",
-                        3 => $"守卫剑LV{lv}:\n速度+50%",
-                        4 => $"守卫剑LV{lv}:\n攻击力+5",
-                        5 => $"守卫剑LV{lv}:\n速度+25% 数量+2",
-                        6 => $"守卫剑LV{lv}:\n速度+25% 数量+2",
-                        7 => $"守卫剑LV{lv}:\n速度+25% 数量+2",
-                        8 => $"守卫剑LV{lv}:\n速度+25% 数量+2",
+                        1 => $"三叉戟LV{lv}:环绕主角身边的三叉戟",
+                        2 => $"三叉戟LV{lv}:\n数量+2",
+                        3 => $"三叉戟LV{lv}:\n速度+50%",
+                        4 => $"三叉戟LV{lv}:\n攻击力+5",
+                        5 => $"三叉戟LV{lv}:\n速度+25% 数量+2",
+                        6 => $"三叉戟LV{lv}:\n速度+25% 数量+2",
+                        7 => $"三叉戟LV{lv}:\n速度+25% 数量+2",
+                        8 => $"三叉戟LV{lv}:\n速度+25% 数量+2",
                         _ => null,
                     };
                 })
@@ -270,23 +270,23 @@ namespace PrjectSurvivor
                 );
             Add(new ExpUpgradeitem(true)
                  .Withkey("basket_ball")
-                 .WithName("篮球")
+                 .WithName("铅球")
                  .WithIconName("ball_icon")
-                 .WithPairedName("合成后的篮球")
+                 .WithPairedName("合成后的铅球")
                  .WithPairedIconName("paired_ball_icon")
                  .WithPairedDescription("攻击力翻倍 体积变大")
                  .Withdescription(lv =>
                 {
                     return lv switch
                     {
-                        1 => $"篮球LV{lv}:在屏幕之间反弹",
-                        2 => $"篮球LV{lv}:\n攻击力+1",
-                        3 => $"篮球LV{lv}:\n攻击力+3",
+                        1 => $"铅球LV{lv}:在屏幕之间反弹",
+                        2 => $"铅球LV{lv}:\n攻击力+1",
+                        3 => $"铅球LV{lv}:\n攻击力+3",
                         4 => $"速度LV{lv}:\n+50%",
-                        5 => $"篮球LV{lv}:\n数量+1",
-                        6 => $"篮球LV{lv}:\n攻击力+3",
-                        7 => $"篮球LV{lv}:\n攻击力+3",
-                        8 => $"篮球LV{lv}:\n攻击力+3",
+                        5 => $"铅球LV{lv}:\n数量+1",
+                        6 => $"铅球LV{lv}:\n攻击力+3",
+                        7 => $"铅球LV{lv}:\n攻击力+3",
+                        8 => $"铅球LV{lv}:\n攻击力+3",
                         _ => null,
                     };
                 })
